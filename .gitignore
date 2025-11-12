@@ -1,0 +1,29 @@
+﻿# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Environments
+venv/
+.env/
+
+# VSCode / system
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Ignore large model files
+model/*.keras
+model/*.h5
+model/*.hdf5
+model/*.pt
+model/*.ckpt
+
+# Ignore datasets or temp arrays
+data/
+*.npy
