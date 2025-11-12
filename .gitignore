@@ -1,4 +1,16 @@
-﻿# Ignore Python cache
+﻿# Ignore large model or dataset files
+*.h5
+*.pkl
+*.zip
+*.pt
+*.csv
+*.keras
+
+# Ignore model and data folders
+model/
+data/
+
+# Ignore Python cache
 __pycache__/
 *.pyc
 
@@ -16,14 +28,3 @@ Thumbs.db
 
 # Logs
 *.log
-
-# Ignore large model files
-model/*.keras
-model/*.h5
-model/*.hdf5
-model/*.pt
-model/*.ckpt
-
-# Ignore datasets or temp arrays
-data/
-*.npy
