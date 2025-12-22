@@ -24,9 +24,9 @@ This system aims to provide fast, automated, and reliable diagnostic support for
 
    Generated Confusion Matrix, ROC Curve, and Grad-CAM heatmaps to interpret model decisions.
 
-4. Model Deployment:
+4. Model Demonstration:
 
-   Deployed using Streamlit for interactive user predictions.
+   Built a Streamlit application for real-time medical image classification.   
 
    Users can upload a chest X-ray image and view the predicted class and confidence score.
 
