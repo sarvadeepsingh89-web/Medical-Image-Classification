@@ -68,16 +68,32 @@ Medical-Image-Classification/
 
 Run the following commands to set up the project locally:
 
-# 1️⃣ Clone the repository
+# 1️ Clone the repository
 git clone https://github.com/sarvadeepsingh89-web/Medical-Image-Classification.git
 
-# 2️⃣ Navigate to the project directory
+# 2️ Navigate to the project directory
 cd Medical-Image-Classification
 
-# 3️⃣ Install dependencies
+# 3️ Install dependencies
 pip install -r requirements.txt
 
-# 4️⃣ Run the Streamlit app
+# 4 Dockerization & Deployment  
+
+This project has been containerized using Docker to ensure consistent execution across different environments.
+
+The Streamlit application, along with all dependencies and the trained deep learning model, is packaged into a Docker image and published on Docker Hub.
+
+🔹 Steps to Run Using Docker
+# Pull the Docker image from Docker Hub
+docker pull sarvadeepsingh123/pneumonia-detection-cnn:v1
+
+# Run the container
+docker run -p 8501:8501 sarvadeepsingh123/pneumonia-detection-cnn:v1
+
+Once the container is running, open the browser and visit:
+http://localhost:8501
+
+# 4️ Run the Streamlit app
 streamlit run app.py
 
 🧩 Technologies Used
@@ -117,10 +133,6 @@ Visualization	Description
 ❌ misclassified_images.png	Examples of incorrect predictions
 📈 roc_curve.png	ROC curve showing AUC performance
 🌐 Streamlit App
-
-Run the Streamlit app to interact with the model:
-
-streamlit run app.py
 
 Features:
 
