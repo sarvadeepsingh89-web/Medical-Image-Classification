@@ -21,7 +21,7 @@ def _preprocess_input(x):
 
 @st.cache_resource
 def load_pneumonia_model():
-    model_path = "model/final_resnet_Pneumonia_model.keras"
+    model_path = "model/final_resnet_pneumonia_model.keras"
     model = tf.keras.models.load_model(
         model_path,
         custom_objects={"_preprocess_input": _preprocess_input},
