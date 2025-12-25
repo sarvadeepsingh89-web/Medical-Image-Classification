@@ -83,6 +83,9 @@ This project has been containerized using Docker to ensure consistent execution 
 
 The Streamlit application, along with all dependencies and the trained deep learning model, is packaged into a Docker image and published on Docker Hub.
 
+Docker image:
+https://hub.docker.com/r/sarvadeepsingh123/pneumonia-detection-cnn
+
 🔹 Steps to Run Using Docker
 # Pull the Docker image from Docker Hub
 docker pull sarvadeepsingh123/pneumonia-detection-cnn:v1
@@ -106,10 +109,10 @@ OpenCV
 scikit-learn
 Streamlit
 
-📊 Model Performance
-Model	                        Accuracy	Validation Accuracy	Loss	Remarks
-Baseline CNN (Scratch)	        ~80.72%	     ~80.29%	   0.76	         Good starting point
-ResNet50 (Transfer Learning)	~97%	     ~95%	       0.34	             Fine-tuned model gave best results
+#📊 Model Performance
+Model	                        Accuracy	  Validation     Accuracy Loss	Remarks
+Baseline CNN (Scratch)	        ~80.72%	   ~80.29%	   0.76	       Good starting point
+ResNet50 (Transfer Learning)	  ~97%	      ~95%	      0.34	       Fine-tuned model gave best results
 
 Highlights:
 
@@ -119,7 +122,7 @@ Grad-CAM visualizations confirm model focuses on correct lung regions.
 
 🧠 Key Insights
 
-Pneumonia-infected lungs show white cloudy patches, while normal lungs appear clearer and darker.
+Pneumonia-infected lungs show red, yellow cloudy patches, while normal lungs appear clearer and darker.
 
 The CNN model efficiently learned texture and density differences between both classes.
 Data Augmentation and Batch Normalization helped reduce overfitting.
